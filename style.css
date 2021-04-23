@@ -1,0 +1,79 @@
+body {
+  font-family: "Nothing You Could Do";
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#paper {
+  width: 625px;
+  height: 650px;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #888;
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+
+#paper::before {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+#paper::after {
+  position: absolute;
+  top: 0;
+  right: 80px;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: rgba(247, 189, 189, 0.911);
+}
+
+#pattern {
+  height: 100%;
+  background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+}
+
+#content {
+  padding-top: 0px;
+  padding-left: 96px;
+  padding-right: 16px;
+  line-height: 25px;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
+#myUL {
+    padding-top: 3px;
+    padding-left: 20px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+
+    display: inline-flex;
+    font-size: 24px;
+    line-height: 30px;
+    border-bottom: solid 1px black;
+}
+
+.input-field {
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+    margin-left: 90px;
+}
+
+.addBtn {
+    margin:0;
+}
+
+li:hover {
+    cursor: default;
+}
